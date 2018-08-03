@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Winchester Newsletter - {{ title }}</title>
+    <link rel="stylesheet" href="../resources/news.css">
+</head>
+<body>
+    <!--
+    <div class="splash-image-container">
+    </div>
+    -->
+    <div class="bg-overlay" id="bg-overlay">
+
+    </div>
+    <div class="article-container" id="article-container">
+        <div class="win-logo-container">
+            <img class="win-logo" src="resources/logo.svg"></img>
+        </div>
+        <div class="title-container">
+            <h1 class="article-title">
+                {{ title }}
+            </h1>
+        </div>
+        <div class="poster-card-container">
+            <img src="//fillmurray.com/100/100" alt="" class="employee-image">
+            <div class="employee-info">
+                <p class="employee-name"> {{ employee.name }} </p>
+                <p class="employee-title"> {{ employee.title }}</p>
+                <p class="employee-years"> {{ employee.years }} Years With Winchester </p>
+            </div>
+        </div>
+        <div class="article-body-container">
+            <p class="article-body">
+                {{ blogbody }}
+            </p>
+            <div class="article-footer-container">
+                <br>
+                <br>
+                <p class="tags-title">
+                    Filed under...
+                </p>
+                <p class="tags">
+                    {{ taglist }}
+                </p>
+            </div>
+        </div>
+        <div class="navigation-container">
+            <a href="" class="navigation-prev">
+                Prev
+            </a>
+            <a href="#" class="navigation-home">
+                Home
+            </a>
+            <a href="" class="navigation-next">
+                Next
+            </a>    
+        </div>
+    </div>
+    <script src="resources/news.js"></script>
+</body>
+</html>
